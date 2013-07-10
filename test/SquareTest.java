@@ -22,4 +22,13 @@ public class SquareTest {
 		
 		assertEquals(40, perimeter);
 	}
+
+	@Test
+	public void should_calculate_perimeter_of_a_zero_width_square() {
+		Square square = new Square(0);
+		
+		int perimeter = square.perimeter();
+		
+		assertEquals(0, perimeter);
+	}
 }
